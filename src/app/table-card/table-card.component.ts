@@ -79,8 +79,13 @@ export class TableCardComponent implements OnInit {
     },
   ];
   openMenu: boolean = false;
-
+  userNumber: any;
   constructor() {}
 
   ngOnInit(): void {}
+
+  openTheMenu(i: number) {
+    this.userNumber = i;
+    this.openMenu = !this.openMenu;
+  }
 }
