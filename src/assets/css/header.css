@@ -1,0 +1,31 @@
+/*
+ Styles header
+*/
+
+.header {
+  @apply absolute z-70 w-full bg-orange-900 -inset-x-0 md:bg-transparent;
+}
+
+.header__container {
+  @apply flex flex-col py-2 mx-auto;
+  @apply md:items-center md:justify-between md:flex-row;
+}
+
+.header__avatar {
+  margin-top: -2px;
+}
+
+.header__logo {
+  @apply flex flex-row items-center justify-between;
+}
+
+.header__nav {
+  @apply flex-col flex-grow pb-4;
+  @apply md:space-x-1 md:pb-0 md:justify-end md:flex-row;
+}
+
+@layer utilities {
+  .header-portada {
+    min-height: 440px;
+  }
+}

@@ -1,0 +1,81 @@
+<div class="container  ">
+  <div class="m-5 bg-white hidden md:block lg:visible xlg:visible ">
+    <div class=" bg-white">
+      <table class="table table-bordered table-striped table-hover w-full">
+        <thead>
+          <tr class="table-background text-sm leading-normal">
+            <th class="py-7 px-6 text-center table-tittle" *ngFor="let name of listTd">
+              <span>{{name}}</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="p-6 text-xs text-center"
+            style="border-bottom-width: 1.5rem; border-top-width: 1.5rem; border-color: white;"
+            *ngFor="let user of listUsers">
+            <td>
+              <div class="inline-flex items-center">
+                <figure class="mr-2">
+                  <img class="w-6 h-6 rounded-full" src="{{user.url}}" />
+                </figure>
+                {{ user.contrator_name }}
+              </div>
+            </td>
+            <td>{{ user.type }}</td>
+            <td>{{ user.start_date }}</td>
+            <td>{{ user.amount }}</td>
+            <td class="py-3 px-6 text-center">
+              <span>
+                <li class="bg-[#36CF822E] text-[#36CF82] py-1 rounded-full text-xs"
+                  [ngClass]="{'bg-[#F29D424D] text-[#F29D42]': user.status !== 'Active'}">{{ user.status }}
+                </li>
+              </span>
+            </td>
+            <td>
+              <div (click)="openMenu = !openMenu" class="relative inline-block text-left">
+                <button type="button"
+                  class="inline-flex justify-center w-full rounded-md px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                  id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <span class="mdi mdi-dots-vertical text-3xl text-[#C4C4C4]"> </span>
+                </button>
+
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="md:hidden lg:hidden xlg:hidden flex flex-col justify-around ">
+  <div class="flex justify-end">
+    <button class=" btn--sm btn--link text-sm bg-[##FF5A70]">
+      <span class="mdi mdi-delete"></span>
+      Clear filters
+    </button>
+  </div>
+  <div *ngFor=" let user of listUsers" class="py-6">
+    <div class="p-6 background-row">
+      <app-row-card [listTittle]="formatList" *ngFor="let list of formatList; let i = index;" [i]="i">
+      </app-row-card>
+    </div>
+  </div>
+  <div>
+  </div>
+</div>
+<div *ngIf="openMenu"
+  class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+  role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+  <a href=" #" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" id=" menu-item-0">Edit</a>
+  <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" id=" menu-item-2">Sign</a>
+  <div class="inline-flex">
+    <a href="#" class="gray-700 block px-4 py-2 text-sm" role="menuitem" id=" menu-item-4">View
+      summary</a>
+  </div>
+  <div>
+    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" id=" menu-item-6">Delete</a>
+  </div>
+</div>

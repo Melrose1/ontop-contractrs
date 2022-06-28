@@ -1,0 +1,28 @@
+<div class="overflow-x-auto">
+  <table class="table table-bordered table-striped table-hover w-full">
+    <tbody>
+      <tr class="text-xs text-center leading-normal" [ngClass]=" i % 2 === 0 ? 'bg-[#f9f9f9]' : 'bg-white' ">
+        <td class="text-left">
+          <span>
+            {{listTittle[i].title}}
+          </span>
+        </td>
+        <td class="text-end" *ngIf="listTittle[i].title !== 'Actions' && listTittle[i].title !== 'Status'">
+          {{ listTittle[i].data }}
+        </td>
+        <td class="text-center" *ngIf="listTittle[i].title === 'Status'">
+          <span>
+            <li class="bg-[#36CF822E] text-[#36CF82] py-1 rounded-full text-xs"
+              [ngClass]="{'bg-[#F29D424D] text-[#F29D42]': listTittle[i].data !== 'Active'}">{{ listTittle[i].data }}
+            </li>
+          </span>
+        </td>
+        <td *ngIf="listTittle[i].title === 'Actions'" class="text-center">
+          <button>
+            <span class="mdi mdi-dots-horizontal text-3xl text-[#C4C4C4]"> </span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

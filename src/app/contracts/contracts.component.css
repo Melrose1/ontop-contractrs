@@ -1,0 +1,134 @@
+/* Rectangle 87 */
+.rectangle-87 {
+  height: 1210px;
+  width: 1440px;
+  border-radius: 0px;
+  background: #f9f9f9;
+}
+
+/* Group 148 */
+.group-148 {
+  width: 1079px;
+  height: 40px;
+}
+
+/* Rectangle 62 */
+.rectangle-62 {
+  width: 266px;
+  height: 40px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Rectangle 63 */
+.rectangle-63 {
+  width: 206px;
+  height: 40px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Rectangle 64 */
+.recetangle-64 {
+  width: 328px;
+  height: 40px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Rectangle 65 */
+.rectangle-65 {
+  width: 190px;
+  height: 40px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* icon/hardware/keyboard_arrow_down_24px */
+.arrow-down {
+  /* G400 */
+  background: #898989;
+}
+
+/* Create on: Jan/10/21 - Jan/28/21 */
+.create {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* G400 */
+  color: #898989;
+}
+
+/* Contract type */
+.contract-type {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* G400 */
+  color: #898989;
+}
+
+/* Contractor Name */
+.contractor-name {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* G400 */
+  color: #898989;
+}
+
+/* Status */
+.status {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* G400 */
+  color: #898989;
+}
+
+/* path 1 2 */
+.path-1-2 {
+  height: 18px;
+  width: 18px;
+  border-radius: 0px;
+}
+.fondo {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* or 125% */
+  letter-spacing: 0.25px;
+}
+.dropdown-caret {
+  @apply fill-gray-400 inline w-8 h-8 ml-1 transition-transform duration-200 transform;
+}
+.forms-buttons {
+  justify-content: row;
+}

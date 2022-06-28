@@ -1,0 +1,22 @@
+.dropdown-caret {
+  @apply fill-gray-400 inline w-8 h-8 ml-1 transition-transform duration-200 transform;
+}
+.bar {
+  width: 0px;
+  height: 45px;
+  border: 1px solid #c4c4c4;
+  margin-top: 1.5rem;
+}
+.photo {
+  display: flex;
+  align-items: center;
+}
+.btn--ws {
+  @apply fixed z-40 text-white border-green-300 rounded-full shadow-lg bottom-6 right-2;
+  background-color: #ff5a70;
+  animation: slide-in-bottom 0.5s 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @apply hover:bg-green-500 hover:text-green-50;
+  @apply active:text-white active:bg-green-600;
+  @apply focus:ring-green-600 focus:ring-1 focus:ring-offset-2;
+}

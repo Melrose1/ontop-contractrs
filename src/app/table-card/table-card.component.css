@@ -1,0 +1,19 @@
+td {
+  background: #f9f9f9;
+}
+.th {
+  text-align: center;
+}
+.background-row {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.btn--link {
+  @apply px-0 py-1 text-[#FF5A70] underline transition-all border-transparent text-left;
+  @apply md:px-2 md:py-2;
+  @apply hover:no-underline hover:text-[#FF5A70] hover:shadow-none;
+  @apply md:focus:ring-orange-100 md:focus:ring-2 md:hover:bg-orange-50 md:focus:ring-offset-2 md:active:bg-orange-100;
+}

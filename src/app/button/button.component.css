@@ -1,0 +1,4 @@
+/* tailwind */
+.dropdown-caret {
+  @apply inline w-4 h-4 ml-1 transition-transform duration-200 transform;
+}
